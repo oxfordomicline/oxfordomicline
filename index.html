@@ -7,9 +7,13 @@
 <meta name="description" content="Oxford Omicline provides rigorous bioinformatics, multi-omics analysis, and professional training for academia and industry.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="logo.png">
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+}  
 :root{
   --navy:#0b1f3a;
   --deep:#0f172a;
@@ -58,6 +62,13 @@ nav a:hover{
   color:var(--accent);
 }
 
+/* LOGO */
+.logo img{
+  height:50px;
+  width:auto;
+  display:block;
+}
+  
 /* HERO */
 header{
   background:
@@ -181,12 +192,17 @@ footer{
 
 <div class="container">
 <nav>
-  <div><strong>Oxford Omicline</strong></div>
+  <div class="logo">
+  <a href="#home">
+    <img src="logo.png" alt="Oxford Omicline Logo">
+  </a>
+</div>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#courses">Courses</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#team">Team</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -215,6 +231,12 @@ We collaborate with universities, research institutes, biotechnology organisatio
 <h2>Our Services</h2>
 <div class="grid">
 
+<div class="card">
+<img src="WGS.jpeg" alt="Whole genome sequencing analysis">
+<h3>Pathogen Genomics, WGS & Genomic Epidemiology</h3>
+<p>End-to-end whole-genome sequencing analysis for bacterial, viral, and fungal pathogens, including quality control, genome assembly, variant detection, antimicrobial resistance profiling, phylogenetic reconstruction, strain comparison, and transmission analysis to support research, surveillance, and outbreak investigation.</p>
+</div>
+  
 <div class="card">
 <img src="singe cell analysis.png">
 <h3>Single-Cell RNA-seq Analysis</h3>
@@ -304,13 +326,13 @@ Specialised course focused on bulk RNA-seq, single-cell RNA-seq, spatial transcr
     <div class="card">
       <img src="Highquality.png" alt="High quality results">
       <h3>High-Quality Results</h3>
-      <p>Every project is delivered with accuracy, documentation, and scientific rigor.</p>
+      <p>Every project is delivered with rigorous QC, detailed documentation, and versions controlled pipelines ensuring reproducibility and scientific integrity.</p>
     </div>
 
     <div class="card">
-      <img src="Transparent.png" alt="Transparent processes">
-      <h3>Transparent Processes</h3>
-      <p>Clear communication of methods, parameters, and analytical decisions.</p>
+      <img src="Transparent.png" alt="Transparent & Traceable Workflow">
+      <h3>Transparent & Traceable Workflow</h3>
+      <p>Clear communication of methods, full report of analytical decisions, parameters, and software version for clarity, auditability, and long-term reproducibility.</p>
     </div>
 
     <div class="card">
@@ -339,6 +361,69 @@ Specialised course focused on bulk RNA-seq, single-cell RNA-seq, spatial transcr
 
   </div>
 </section>
+
+<section id="faq">
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>What types of organisations do you work with?</h3>
+<p>
+We collaborate with universities, research institutes, biotechnology companies, 
+clinical research groups, and translational science teams. Our services are 
+tailored to both academic research and industry-driven projects.
+</p>
+</div>
+
+<div class="card">
+<h3>Do you provide confidentiality agreements (NDAs)?</h3>
+<p>
+Yes. We routinely operate under Non-Disclosure Agreements and institutional 
+confidentiality frameworks to ensure data security, intellectual property 
+protection, and compliance with regulatory standards.
+</p>
+</div>
+
+<div class="card">
+<h3>What is the typical turnaround time for analysis?</h3>
+<p>
+Project timelines depend on dataset size and analytical complexity. 
+Standard RNA-seq analyses are typically delivered within 2–4 weeks, 
+with clearly defined milestones and reporting schedules.
+</p>
+</div>
+
+<div class="card">
+<h3>Do you support manuscript preparation and publication?</h3>
+<p>
+Yes. We provide publication-ready figures, reproducible workflows, 
+and detailed methodological documentation suitable for high-impact 
+peer-reviewed journals.
+</p>
+</div>
+
+<div class="card">
+<h3>Which sequencing platforms and data types do you support?</h3>
+<p>
+We support data generated from Illumina, 10x Genomics, Nanopore, 
+and other major platforms, covering bulk RNA-seq, single-cell RNA-seq, 
+spatial transcriptomics, and multi-omics datasets.
+</p>
+</div>
+
+<div class="card">
+<h3>How are training courses delivered?</h3>
+<p>
+Our training programmes are delivered online, on-site, or in hybrid formats. 
+We also provide customised workshops for research groups and corporate teams.
+</p>
+</div>
+
+</div>  
+</div>
+</section>
   
 <section id="team">
 <div class="container">
@@ -346,7 +431,7 @@ Specialised course focused on bulk RNA-seq, single-cell RNA-seq, spatial transcr
 <div class="grid">
 
 <div class="card">
-<img src="waqas.png">
+<img src="waqas1.jpg">
 <h3>Dr Muhammad Waqas Ali - CEO & Co-Founder</h3>
 <p>Muhammad is a molecular biologist and bioinformatician with a PhD from the University of Birmingham. His research background spans molecular biology, genomics, and data-driven biological discovery. He founded Oxford Omicline to bridge rigorous computational analysis with clear biological interpretation, supporting high-impact research and translational science.</p>
 </div>
@@ -397,7 +482,7 @@ For collaborations, consultancy enquiries, or training opportunities:
     Old Road Campus, Oxford, UK
   </div>
 <div class="2026">
-    © 2026 Oxford Omicline 
+    © 2026 Oxford Omicline. All rights reserved.
 </div>
 </footer>
 
